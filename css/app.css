@@ -1,7 +1,91 @@
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+@import url('http://fonts.googleapis.com/css?family=Oswald');
 
-  /* selector {property value} */
- nav {border:1px solid red;}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 
-#indexpage .mainnavigation li:nth-child(1) {background-color: yellow;}
-#portfoliopage .mainnavigation li:nth-child(2) {background-color: yellow;}
-#aboutpage .mainnavigation li:nth-child(3) {background-color: yellow;}
+}
+/*This will seperate my content from any paragraphs I many want to write.
+IT WILL BE DROP DOWN UNDER THE IMAGE*/
+.intro {
+   height: 100%;
+   width: 100%;
+   margin: auto;
+   background: url(../images/workplease.jpeg) no-repeat 50% 50%;
+   display: table;
+   top: 0;
+   background-size: cover;
+}
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+
+}
+.content h1{
+     font-family: 'Raleway', sans-serif;
+     color: #F9F3F4;
+     text-shadow: 0px 0px 300px #000;
+     font-size: 500%;
+}
+.btn {
+    border-radius: 9px;
+    font-family: 'Oswald' sans-serif;
+    color: #fff;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid #fff 3px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    color: #006699;
+    border: solid #006699 3px;
+}
+@media screen and (max-width: 768px) {
+    .content h1 {
+         font-size: 250%;
+    }
+    .btn {
+      font-size: 110%;
+      padding: 7px 15px;
+    }
+}
+
+/*body*/
+body {background-color: black;
+      color: #fff;
+      text-align: center;
+ }
+
+.testimonial {
+  margin-top: 20px;
+  padding: 5px 5px;
+
+}
+
+.cell {border:1px solid #fff;}
+
+
+footer {
+  font-size: 75%;
+  margin-top: 45px;
+}
+
+
+/* feedback page */
+
+/*.tealbg {background-color: teal; }
+
+.feedbackform {padding: 100px; }
+/* background-image: ("url");
+background-size */
